@@ -1,0 +1,25 @@
+.body-nav-container-page {
+    display: flex;
+}
+
+/* @media (min-width: 768px) {
+    .main-container {
+        justify-content: space-between;
+    }
+    .main-scene {
+        padding-right: 0px;
+    }
+
+    .body-nav-container-page {
+        display: inline;    
+    }
+
+    ul li {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+} */

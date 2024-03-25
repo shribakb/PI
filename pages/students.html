@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shribak Bohdan">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/pagination.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Students</title>
+</head>
+<body>
+    <header class="header">
+        <h1><a href="../index.html" class="logo">CMS</a></h1>
+
+        <nav class="navbar">
+            <div class="link-container">
+                <a href="#">
+                    <img src="../img/notifications.png" alt="Notifications" width="30" height="30" class="nav-img">
+                    <div class="circle"></div>
+                </a>
+                <div class="notifications-list">
+                    <div class="message">
+                        <img src="../img/notifications-user.png" alt="user-logo" width="30" height="20" class="not-user">
+                        <span>
+                            Привіт, ти зробив 1 лабораторну з ПВІ?
+                        </span>
+                    </div>
+                    
+                    <div class="message">
+                        <img src="../img/notifications-user.png" alt="user-logo" width="30" height="20" class="not-user">
+                        <span>
+                            Тоді сьогодні о 8-ій
+                        </span>
+                    </div>
+                    <div class="message">
+                        <img src="../img/notifications-user.png" alt="user-logo" width="30" height="20" class="not-user">
+                        <span>
+                            You won 3000$ https://Skam.net
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="link-container">
+                <a href="#" class="link">
+                    <img src="../img/user.png" alt="" width="30" height="30" class="nav-img">
+                    <span class="profile-name">Bohdan Shribak<span>
+                </a>
+                <div class="mini-menu">
+                    <button class="profile-button">Profile</button>
+                    <button class="profile-button">Log out</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="body-nav-container-page">
+                <ul class="main-menu">
+                    <li><a href="dashboard.html">Dashboards</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="task.html">Tasks</a></li>
+                </ul>
+            </div>
+            
+            <div class="main-scene">
+                <div class="header-table">
+                    <h2>Students</h2>
+                </div>
+                <div class="add-button">
+                    <input id="add" type="image" src="../img/add.png" alt="Add" width="40" height="40"></input>
+                </div>
+                <div class="table-button">
+                    <div class="pagination-menu">
+                        <div class="items-controller">
+                            <h5>Show</h5>
+                            <select id="itemperpage">
+                                <option value="04">02</option>
+                                <option value="05">05</option>
+                                <option value="08">08</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                            </select>
+                            <h5>Per page</h5>
+                        </div>
+                        <div class="search">
+                            <h5>Search</h5>
+                            <input type="text" name="" placeholder="search">
+                        </div>
+                    </div>
+                    <table id="myTable">
+                        <thead>
+                            <tr>
+                                <th class="cell-checkbox"><input type="checkbox" class="select-all"></th>
+                                <th class="cell-group">Group</th>
+                                <th class="name">Name</th>
+                                <th class="cell-gender">Gender</th>
+                                <th class="birthday">Birthday</th>
+                                <th class="cell-status">Status</th>
+                                <th class="cell-options">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="3107">
+                                <td class="cell-checkbox"><input type="checkbox" class="group-select"></td>
+                                <td class="cell-group">PZ-25</td>
+                                <td class="name">Aifos Mykh</td>
+                                <td class="cell-gender">F</td>
+                                <td class="birthday">1939-09-01</td>
+                                <td class="cell-status"><img src="../img/offline.png" alt="Status: offline" width="20" height="20"></td>
+                                <td class="cell-options">
+                                    <input type="image" src="../img/edit.png" alt="Edit" width="30" height="30" class="main-button" id="edit-button"></input>
+                                    <input type="image" src="../img/remove.png" alt="remove" width="30" height="30" class="delete-button" id="delete-button"></input>
+                                </td>
+                            </tr>
+                            <tr id="123">
+                                <td class="cell-checkbox"><input type="checkbox" class="group-select"></td>
+                                <td class="cell-group">PZ-27</td>
+                                <td class="name">Bohdan Shribak</td>
+                                <td class="cell-gender">M</td>
+                                <td class="birthday">2005-09-01</td>
+                                <td class="cell-status"><img src="../img/online.png" alt="Status: online" width="20" height="20"></td>
+                                <td class="cell-options">
+                                    <input type="image" src="../img/edit.png" alt="Edit" width="30" height="30" class="main-button" id="edit-button"></input>
+                                    <input type="image" src="../img/remove.png" alt="remove" width="30" height="30" class="delete-button" id="delete-button"></input>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="bottom-field">
+                        <ul class="pagination">
+                            <li class="prev"><a href="#" id="prev" class=".a">&#139</a></li>
+                            <li class="next"><a href="#" id="next" class=".a">&#155</a></li>
+            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="popup">
+            <div class="popup-content">
+                <form>
+                <div class="popup-header">
+                    <span class="header-form">Add student</span>
+                    <input id="close" type="image"img src="../img/close.png" alt="close" width="40" height="40"></input>
+                </div>
+                <div class="main-popup">
+                    <div class="form-element">
+                        <span>Group</span>
+                        <!-- <input id="input-group" list="group" class="group-list" placeholder="Select Group" type="text">
+                        <datalist id="group">
+                            <option value="PP-27"></option>
+                            <option value="PZ-23"></option>
+                            <option value="PZ-25"></option>
+                            <option value="PZ-26"></option>
+                            <option value="PZ-27"></option>
+                        </datalist> -->
+                        <select id="input-group" class="group-list" placeholder="Select Group">
+                            <option value="PP-27">PP-27</option>
+                            <option value="PZ-23">PZ-23</option>
+                            <option value="PZ-25">PZ-25</option>
+                            <option value="PZ-26">PZ-26</option>
+                            <option value="PZ-27">PZ-27</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-element">
+                        <span>First name</span>
+                        <input id="input-first-name" type="text" name="first-name" id="first-name" onkeyup="validateName()">
+                        <span id="first-name-error"></span>
+                    </div>
+                    
+                    <div class="form-element">
+                        <span>Last name</span>
+                        <input id="input-last-name" type="text" name="last-name" id="last-name" onkeyup="validateLastName()">
+                        <span id="last-name-error"></span>
+                    </div>
+    
+                    <div class="form-element">
+                        <span>Gender</span>
+                        <!-- <input id="input-gender" list="gender" class="gender-list" placeholder="Select Gender" type="text">
+                        <datalist id="gender">
+                            <option value="Female"></option>
+                            <option value="Male"></option>
+                        </datalist> -->
+                        <select id="input-gender" class="gender-list" placeholder="Select Gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>                        
+                    </div>        
+    
+                    <div class="form-element">
+                        <span>Birthday</span>
+                        <input id="input-date" type="date" name="birthday" id="birthday" oninput="validateDate()">
+                        <span id="date-value-error"></span>
+
+                    </div>
+                </div>
+                </form>
+                <div class="element-footer">
+                    <div class="message-footer">
+                        <span id="submit-error"></span>
+                    </div>
+                    
+                    <div class="footer-but">
+                        <div class="elem-but">
+                            <button id="clearFields" class="clear-button">Clear</button>
+                        </div>
+                        <div class="elem-but">
+                            <button class="ok-button" id="ok-button">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-content">
+            <div class="modal-message">
+                <p>Are you sure you want to delete?</p>
+                <button id="confirmBtn" class="confirmBtn">Yes</button>
+                <button id="cancelBtn" class="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </main>
+    <script src="../script.js"></script>
+</body>
+</html>

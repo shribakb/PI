@@ -1,0 +1,52 @@
+{
+    "name": "CMS Shribak Bohdan",
+    "short_name": "CMS",
+    "theme_color": "#5c5c5c",
+    "background_color": "#fff",
+    "display": "standalone",
+    "orientation": "landscape",
+    "scope": "/",
+    "start_url": ".",
+    "icons": [
+      {
+        "src": "/AppIcons/72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "/AppIcons/92.png",
+        "sizes": "92x92",
+        "type": "image/png"
+      },
+      {
+        "src": "/AppIcons/128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "/AppIcons/144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "/AppIcons/152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      },
+      {
+        "src": "/AppIcons/196.png",
+        "sizes": "196x196",
+        "type": "image/png"
+      },
+      {
+        "src": "/AppIcons/256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "/AppIcons/512.png",
+        "sizes": "512x152",
+        "type": "image/png"
+      }
+    ]
+  }
